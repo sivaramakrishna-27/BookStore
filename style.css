@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #555;
+}
+
+ul li {
+    list-style: none;
+}
+
+body{
+    background-color: white;
+}
+
+p{
+    color: #555;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+/*============================nav bar stylling======================*/
+.header{
+    background-color: white;
+    margin-bottom: 25px;
+}
+
+.navbar{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    margin-top: 35px
+}
+
+.navbar .logo{
+    height: 44px;
+}
+
+.navbar .logo img{
+    height: 100%;
+    margin-left: 20px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar ul li a:hover{
+    color: tomato;
+}
+
+/*stylling main content*/
+
+.main-content .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.col-2{
+    align-items: center;
+    justify-content: center;
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img{
+    height: 600px;
+    width: 500px;
+    margin-left: 120px;
+}
+
+.col-2 h1{
+    font-size: 45px;
+    line-height: 50px;
+    margin: 25px 0;
+    font-family: 'Inconsolata', monospace;
+}
+
+.btn{
+    display: inline-block;
+    background-color: #ff523b;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 20px;
+}
+
+.btn:hover{
+    background: #4d4242;
+}
+
+/*---------------------products--------------------*/
+
+.search{
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.search-container{
+    background-color: #d4d4d8;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+}
+
+.input-container{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.input-container i{
+    color: black;
+    font-size: 20px;
+    margin-left: 25px;
+}
+
+.input-container input{
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: rgb(22, 20, 20);
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.button-container{
+    background-color: #ff523b;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.button-container:hover{
+    background-color: #382b29;
+}
+
+/*=====================stylling product page====================*/
+
+.product-list{
+    max-width: 1080px;
+    margin: 40px auto;
+    padding: 0 25px;
+}
+
+.product-list h2{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px auto;
+}
+
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    flex-grow: 1;
+    background-color: rgb(255, 255, 255);
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    max-width: 200px;
+    margin: 25px 10px;
+    border-radius: 10px;
+    background-color: rgb(221, 221, 221);
+    transition: transform 0.25s;
+}
+
+.col-4:hover{
+    transform: scale(1.05);
+}
+
+.col-4 img{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+
+
+.col-4 h4{
+    padding: 5px 0;
+    font-size: 15px;
+}
+
+.col-4 p{
+    color: red;
+    margin: 5px 0;
+}
+
+.col-4 .button-container{
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+.col-4 .button span{
+    justify-content: center;
+}
+
+/*        footer--------------       */
+
+.footer{
+
+    background-color: rgb(7, 7, 6);
+    font-size: 14px;
+    padding: 25px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container{
+    display: flex;
+    max-height: 100px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer p{
+    color: #8a8a8a;
+}
+
+.footer h3{
+    color: white;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.footer ul li {
+    color: #8a8a8a;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.footer ul li:hover{
+    color: tomato;
+}
+
+.footer-col-2 {
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-img{
+    max-width: 180px;
+    margin-bottom: 5px;
+}
+
+.footer-img img{
+    width: 100%;
+    height: 60px
+}
+
+.footer hr{
+    border: none;
+    height: 1px;
+    background: white;
+    margin: 20px 0;
+}
+
+.footer-text{
+    margin-left: 600px;
+}
+
+/*=====================contact-page================*/
+
+.contact{
+    max-width: 1080px;
+    margin: 40px auto;
+    padding: 0 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact h2{
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.contact-container{
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-container .left-side-1{
+    display: flex;
+    padding: 20px;
+}
+
+.left-side-1 .icon{
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-side{
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.contact-form form input{
+  width: 750px;
+  border: none;
+  outline: none;
+  padding: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  background-color: gainsboro;
+}
+
+.contact-form form textarea{
+    background-color: gainsboro;
+    width: 750px;
+    margin-top: 15px;
+    padding: 20px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.contact hr{
+    border: 2px solid white;
+}
+
+/*===================================Account Container=========================*/
+
+.header-container{
+    margin-bottom: 25px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 2px 1px #c9e2ee;
+}
+
+.account-container{
+    background-color: aliceblue;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.account-form{
+    max-width: 300px;
+    background-color: #fff;
+    width: 100%;
+    height: 400px;
+    margin: 80px auto;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 20px 0px rgb(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.account-form-container span{
+    margin-top: 50px;
+    font-weight: bold;
+    padding: 3px 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+.account-form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1.45s;
+}
+
+.account-form-container form input{
+    width: 100%;
+    height: 30px;
+    padding: 0 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+}
+
+.account-form-container form a{
+    padding: 20px;
+    font-size: 12px;
+}
+
+.account-form-container form .button-container{
+    padding: 5px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.account-form-container form .button-container:focus{
+    outline: none;
+}
+
+#login-form{
+    left: -300px;
+}
+
+#reg-form{
+    left: 0;
+}
+
+#indicator{
+    width: 150px;
+    border: none;
+    background: #ff523b;
+    height: 3px;
+    margin-top: 6px;
+    transform: translateX(80px);
+    transition: transform 1.45s;
+}
+
+
+@media screen and (max-width: 800px){
+    .product-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
