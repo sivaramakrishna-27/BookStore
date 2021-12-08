@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Bookstore</title>
+</head>
+<body>
+
+    <div class="account-container">
+        <div class="header-container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="logo.png" alt="logoimg" width="125px">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="https://img.icons8.com/material-sharp/24/000000/shopping-cart-promotion.png"/>
+            </div>
+        </div>
+        <div class="account-form">
+            <div class="account-form-container">
+                <div class="form-button">
+                    <span onclick="login()">Login</span>
+                    <span onclick="register()">Register</span>
+                    <hr id="indicator"> 
+                </div>
+                <form id="login-form">
+                    <input type="text" placeholder="Username">
+                    <input type="password" placeholder="password">
+                    <button type="submit" class="button-container">Login</button>
+                    <a href="">Forgot password</a>
+                </form>
+                <form id="reg-form">
+                    <input type="text" placeholder="Username">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="password">
+                    <button type="submit" class="button-container">Register</button>
+                </form>
+            </div>
+        </div>
+    <!--account container starts==========-->
+    </div>
+    <!--=================== footer  ==========-->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-col-1">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Youtube</li>
+                    <li>Instagram</li>
+                </ul>
+            </div>
+            <div class="footer-col-2">
+                <div class="footer-img">
+                    <img src="logo.png" alt="logo">
+                </div>
+                <p>Our Purpose is to Sustainably make the pleasure and <br>
+                Benifits of books to accessiable to the many
+                </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>dicounts</li>
+                    <li>Return Policy</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-text"><p>ThankYou!!</p></div>
+    </div>
+
+
+    <!--========================js for contact form==========-->
+    <script>
+        var loginform = document.getElementById("login-form");
+        var regform = document.getElementById("reg-form");
+        var indicator = document.getElementById("indicator");
+
+        function register(){
+            regform.style.transform = "translateX(0px)";
+            loginform.style.transform = "translateX(0px)";
+            indicator.style.transform = "translateX(150px)";
+        }
+        
+        function login(){
+            regform.style.transform = "translateX(300px)";
+            loginform.style.transform = "translateX(300px)";
+            indicator.style.transform = "translateX(0px)";
+        }
+
+
+    </script>
+
+
+
+<script src="script.js"></script>
+
+
+
+</body>
+</html>
